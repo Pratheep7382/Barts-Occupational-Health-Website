@@ -1,0 +1,344 @@
+<!--basic html starters-->
+<!DOCTYPE html>
+
+<html lang="en-GB">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Occupational health services from Barts Health NHS Trust,
+            supporting organisations and employees with workplace health needs.">
+        <meta name="Creator of the Website" content="This is a website made by S. Pratheep Balachandar">
+
+        <!--this is the Name of the tab when you open the website-->
+        <title>
+            Occupational Health Services | Barts Health NHS Trust
+        </title>
+
+        <!--This will bring in information and code from the CSS document to make the website look nice-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <!--Main Part of the website-->
+    <body id="top">
+        <a class="skip-link" href="#main-content">
+            Skip to main content
+        </a>
+
+        <!--This is the very top of the page and it links the user to the email and the phone number directly-->
+        <div class="top-bar">
+            <div class="container top-bar__content">
+                <div class="top-bar__contact">
+                    <span>Phone Occupational Health on:</span>
+                    <a target="_blank" href="tel:02074804892">020 7480 4892</a>
+                </div>
+
+                <div class="top-bar__contact top-bar__contact--email">
+                    <span>Email Occupational Health on:</span>
+                    <a target="_blank"
+                        href="mailto:bartshealth.occupationalhealth@nhs.net">
+                        bartshealth.occupationalhealth@nhs.net
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--This is the the Header of the website, this is the part that comes from the original Occupational health website-->
+        <header class="site-header">
+            <div class="container header-layout">
+                <!--This is the Barts Health logo, when the user presses on the logo it will take them to the proper NHS Barts Health website-->
+                <a class="site-logo" href="https://www.bartshealth.nhs.uk/" aria-label="Barts Health NHS Trust home">
+                    <img src="Barts Health logo.png" alt="Barts Health NHS Trust" width="150" height="79">
+                </a>
+
+                <!--This is the Navigation part of the website, this will allow the user to access the official Barts Health resources.-->
+                <!--this part also comes straight from the Barts Health Websites-->
+                <nav class="main-nav" aria-label="Main navigation">
+                    <ul>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/get-involved">Get involved</a></li>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/patients-and-visitors">Patients and visitors</a></li>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/about-us">About us</a></li>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/news">Our news</a></li>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/joinus">Work with us</a></li>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/contact-us">Contact us</a></li>
+                        <li><a class="button button--donate" href="https://www.bartscharity.org.uk/" style="color:#ffffff;">Donate</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!--This is unique to my website, compare to the Original. It is a Slideshow of images, this is just aesthetic-->
+        <main id="main-content">
+            <section class="hero" aria-labelledby="hero-heading">
+                <div class="hero__slides" aria-hidden="true">
+                    <figure class="hero__slide hero__slide--1">
+                        <img src="img7.jpg" alt="" fetchpriority="high" decoding="async" loading="eager">
+                    </figure>
+                    
+                    <figure class="hero__slide hero__slide--2">
+                        <img src="img8.jpg" alt="" decoding="async" loading="lazy">
+                    </figure>
+                    
+                    <figure class="hero__slide hero__slide--3">
+                        <img src="img5.jpg" alt="" decoding="async" loading="lazy">
+                    </figure>
+                    
+                    <figure class="hero__slide hero__slide--4">
+                        <img src="img6.jpg" alt="" decoding="async" loading="lazy">
+                    </figure>
+                    
+                    <figure class="hero__slide hero__slide--5">
+                        <img src="img2.jpg" alt="" decoding="async" loading="lazy">
+                    </figure>
+
+                    <figure class="hero__slide hero__slide--6">
+                        <img src="img4.jpg" alt="" decoding="async" loading="lazy">
+                    </figure>
+                </div>
+
+                <!--this is the words that are overlaid over the slideshow-->
+                <div class="hero__overlay" aria-hidden="true"></div>
+
+                <div class="container hero__content">
+                    <h1 id="hero-heading">
+                        We offer occupational health services
+                    </h1>
+
+                    <p>
+                        We help your organisation understand and manage your employees' physical and mental health,
+                        as well as proactively manage sickness issues.
+                    </p>
+
+                    <!--This is a button that will allow the user to automatically scroll down to see the services that are provided by occupational health-->
+                    <a class="button" href="#services-heading">Our services</a>
+                </div>
+            </section>
+
+            <!--This is the an introduction to the purposes of the service-->
+            <!--By having it as reveal-on-scroll gives the website a nice aesthetic-->
+            <section class="content-section" aria-labelledby="support-heading">
+                <div class="container split-layout reveal-on-scroll">
+                    <div class="split-layout__content">
+                        <!--The text is pretty much what you would see on the original website-->
+                        <!--Splitting it up makes it so that those that may find it hard to read will have an easier time-->
+                        <h2 id="support-heading">
+                            Helping you protect, retain and support staff with health issues in the workplace
+                        </h2>
+
+                        <p>
+                            In today's fast-paced and demanding work environment, employees often face a range of health
+                            risks and
+                            challenges. From physical injuries to mental health issues, the wellbeing of your workforce can
+                            significantly
+                            affect productivity and the overall success of your organisation.
+                        </p>
+
+                        <p>
+                            We know that when staff are happy and healthy, they are more productive and their working lives
+                            are generally better.
+                        </p>
+                    </div>
+
+                    <!--This Image has loading as lazy, this is important to make the initial page load faster-->
+                    <figure class="split-layout__media">
+                        <img src="img3.jpg" alt="Occupational health professionals supporting an employee" loading="lazy" decoding="async">
+                    </figure>
+                </div>
+            </section>
+
+            <!--In this section the image and the text are reversed this give the user a nice experience-->
+            <section class="help-section" aria-labelledby="help-heading">
+                <div class="container split-layout split-layout--reverse reveal-on-scroll">
+                    <figure class="split-layout__media">
+                        <img src="img1.jpg" alt="Healthcare professional discussing workplace health support" loading="lazy" decoding="async">
+                    </figure>
+
+                    <!--Again this section is taken straight from the original website-->
+                    <div class="split-layout__content">
+                        <h2 id="help-heading">How we can help</h2>
+                        <p>
+                            Our occupational health service offers a wide range of support to help your organisation
+                            understand and
+                            manage employees' physical and mental health, as well as sickness absence.
+                        </p>
+
+                        <p>
+                            We help prevent work-related health issues and carry out assessments to understand how an
+                            employee's health
+                            may affect their work.
+                        </p>
+
+                        <p>
+                            Our service is delivered by a dedicated team of highly qualified and experienced doctors,
+                            nurses,
+                            physiotherapists and administrative staff.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!--By pressing the button on the Hero section of the page it will bring the User down here-->
+            <section id="services" class="services-section" aria-labelledby="services-heading">
+                <div class="container">
+                    <h2 id="services-heading" class="section-heading">Our services</h2>
+                    <!--I made this section into a grid so that its is easy for the user to read-->
+                    <!--This text is from the Services on the original website, however it has been altered to make it into easier to digest sections-->
+                    <div class="services-grid">
+                        <article class="service-card reveal-on-scroll">
+                            <h3>Management referrals</h3>
+                            <p>
+                                Independent occupational health assessments for managers who have concerns about an
+                                employee's health,
+                                wellbeing or fitness for work.
+                            </p>
+                        </article>
+
+                        <article class="service-card reveal-on-scroll">
+                            <h3>Case management</h3>
+                            <p>
+                                Support for employees whose health is affecting their work, attendance or safety. We work
+                                with the employee,
+                                manager and HR team to identify a practical outcome.
+                            </p>
+                        </article>
+
+                        <article class="service-card reveal-on-scroll">
+                            <h3>Pre-placement clearances</h3>
+                            <p>
+                                Assessments to confirm whether an employee is medically fit for a new role and identify any
+                                reasonable
+                                workplace adjustments or immunisations they may require.
+                            </p>
+                        </article>
+
+                        <article class="service-card reveal-on-scroll">
+                            <h3>NSI helpline</h3>
+                            <p>
+                                Specialist guidance following a needlestick or sharps injury, including advice about
+                                possible exposure to
+                                hepatitis B, hepatitis C and HIV.
+                            </p>
+                        </article>
+
+                        <article class="service-card reveal-on-scroll">
+                            <h3>Sharps risk management</h3>
+                            <p>
+                                Advice for employers whose workers use, handle or may encounter used sharps, helping them
+                                reduce exposure
+                                risks and prevent avoidable injuries.
+                            </p>
+                        </article>
+
+                        <article class="service-card reveal-on-scroll">
+                            <h3>Health surveillance</h3>
+                            <p>
+                                Ongoing monitoring for employees who remain exposed to workplace health risks, helping
+                                employers meet legal
+                                requirements and identify signs of ill health early.
+                            </p>
+                        </article>
+
+                        <article class="service-card reveal-on-scroll">
+                            <h3>Workplace health checks</h3>
+                            <p>
+                                Health assessments that help protect employees and determine whether existing workplace
+                                safety measures and
+                                controls remain effective.
+                            </p>
+                        </article>
+
+                        <article class="service-card reveal-on-scroll">
+                            <h3>Access to immunisation clinics</h3>
+                            <p>
+                                Occupational immunisation services that help employers protect staff from infectious
+                                diseases and meet their
+                                responsibilities under health and safety and COSHH legislation.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!--this is a contact us section, i made this so the users will be able to press the buttons and it will take them directly to that service-->
+            <section class="contact-section" aria-labelledby="contact-heading">
+                <div class="container contact-panel reveal-on-scroll">
+                    <div>
+                        <h2 id="contact-heading">Contact Occupational Health</h2>
+                        <p>
+                            Speak to our team to discuss your organisation's occupational health requirements.
+                        </p>
+                    </div>
+
+                    <div class="contact-actions">
+                        <a class="button" target="_blank" href="tel:02074804892">
+                            Call 020 7480 4892
+                        </a>
+
+                        <a class="button button--secondary" target="_blank"
+                            href="mailto:bartshealth.occupationalhealth@nhs.net?subject=Occupational%20Health%20Enquiry">
+                            Email Occupational Health
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--This is purely just for aesthetics but it is the hospitals that are involved with the Barts Trust-->
+            <!--The colours are used as a nice transition between the contact section and the Footer-->
+            <div class="landscape-banner" aria-hidden="true">
+                <img src="landscape.jpg" alt="" loading="lazy" decoding="async">
+            </div>
+        </main>
+
+        <!--This is the footer part of the website, this is pretty much copied from the original website-->
+        <footer class="site-footer">
+            <div class="container footer-grid">
+                <nav aria-labelledby="popular-pages-heading">
+                    <h2 id="popular-pages-heading">Popular pages</h2>
+                    <ul>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/find-a-consultant">Find a consultant</a>
+                        </li>
+                        <li><a target="_blank" href="https://www.bartscharity.org.uk/">Barts Charity</a></li>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/heroes">Barts Health Heroes</a></li>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/volunteers">Volunteer with us</a></li>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/joinus">Work with us</a></li>
+                    </ul>
+                </nav>
+
+                <nav aria-labelledby="important-links-heading">
+                    <h2 id="important-links-heading">Important links</h2>
+                    <ul>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/pals">Advice and support</a></li>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/health-records">Health records</a></li>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/delivering-our-vision">Delivering our
+                                vision</a></li>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/our-board">Our board</a></li>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/press-office">Press office</a></li>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/referrals">Referrals</a></li>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/takepartinourresearch">Take part in
+                                research</a></li>
+                    </ul>
+                </nav>
+
+                <nav aria-labelledby="site-information-heading">
+                    <h2 id="site-information-heading">Site information</h2>
+                    <ul>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/sitemap">Sitemap</a></li>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/privacy">Privacy</a></li>
+                        <li><a target="_blank" href="https://www.bartshealth.nhs.uk/accessibility-needs">Accessibility</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!--Decorative footer image replacing the previous CQC section-->
+                <figure class="footer-image" aria-hidden="true">
+                    <img src="img9.jpg" alt="" loading="lazy" decoding="async">
+                </figure>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container footer-bottom__content">
+                    <p>&copy; 2026 Barts Health NHS Trust</p>
+                    <a href="#top">Back to top</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
